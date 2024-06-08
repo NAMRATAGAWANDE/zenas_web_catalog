@@ -1,7 +1,7 @@
 import streamlit as st
-import snowflake.connector
+from snowflake.snowpark.functions import col
+import requests
 import pandas as pd
-
 st.title("Zena's Amazing Athleisure Catalog")
 
 # Connect to Snowflake
